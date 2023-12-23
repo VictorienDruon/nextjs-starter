@@ -110,3 +110,7 @@ npm run storybook
 ```
 
 Now, you're all set!
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
