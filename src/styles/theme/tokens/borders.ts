@@ -1,5 +1,5 @@
-import { Tokens } from "@pandacss/dev";
+import { defineTokens } from "@pandacss/dev";
 
-export const borders: Tokens["borders"] = {
-  none: { value: "none" },
-};
+export const borders = defineTokens.borders({
+	none: { value: "none" },
+});

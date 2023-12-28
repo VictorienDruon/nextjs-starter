@@ -1,7 +1,7 @@
-import { Tokens } from "@pandacss/dev";
+import { defineTokens } from "@pandacss/dev";
 import { spacing } from "./spacing";
 
-const largeSizes: Tokens["sizes"] = {
+const largeSizes = {
 	xs: { value: "16rem" },
 	sm: { value: "20rem" },
 	md: { value: "24rem" },
@@ -14,11 +14,11 @@ const largeSizes: Tokens["sizes"] = {
 	"8xl": { value: "90rem" },
 };
 
-export const sizes: Tokens["sizes"] = {
+export const sizes = defineTokens.sizes({
 	...spacing,
 	...largeSizes,
 	full: { value: "100%" },
 	min: { value: "min-content" },
 	max: { value: "max-content" },
 	fit: { value: "fit-content" },
-};
+});

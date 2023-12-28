@@ -1,6 +1,6 @@
-import { CssKeyframes } from "@pandacss/dev";
+import { defineKeyframes } from "@pandacss/dev";
 
-export const keyframes: CssKeyframes = {
+export const keyframes = defineKeyframes({
 	spin: {
 		"0%": { transform: "rotate(0deg)" },
 		"100%": { transform: "rotate(360deg)" },
@@ -39,4 +39,4 @@ export const keyframes: CssKeyframes = {
 		"0%": { opacity: "1", transform: "translateY(0)" },
 		"100%": { opacity: "0", transform: "translateY(4px)" },
 	},
-};
+});

@@ -1,6 +1,6 @@
-import { Tokens } from "@pandacss/dev";
+import { defineTokens } from "@pandacss/dev";
 
-export const colors: Tokens["colors"] = {
+export const colors = defineTokens.colors({
 	iris: {
 		light: {
 			1: { value: "#fdfdff" },
@@ -124,4 +124,4 @@ export const colors: Tokens["colors"] = {
 			12: { value: "#ffd1d9" },
 		},
 	},
-};
+});

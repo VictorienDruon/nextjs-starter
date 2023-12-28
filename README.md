@@ -87,7 +87,7 @@ NEXT_PUBLIC_SUPABASE_URL=your-project-url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 ```
 
-Don't forget to update the env variables validation in `src/utils/env.mjs` as you go. You can mark the object in `createEnv()` with `skipValidation: true` if you wish to disabled the validation for the moment.
+Don't forget to update the env variables validation in `src/utils/env.mjs` as you go. You can mark the object in `createEnv()` with `skipValidation: true` if you wish to disable the validation.
 
 ### 3. Add your Supabase Project ID
 

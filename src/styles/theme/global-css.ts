@@ -1,6 +1,6 @@
-import { GlobalStyleObject } from "@pandacss/dev";
+import { defineGlobalStyles } from "@pandacss/dev";
 
-export const globalCss: GlobalStyleObject = {
+export const globalCss = defineGlobalStyles({
 	html: {
 		lineHeight: 1.5,
 		MozOsxFontSmoothing: "grayscale",
@@ -29,4 +29,4 @@ export const globalCss: GlobalStyleObject = {
 	".border, .border-t, .border-r, .border-b, .border-l, hr": {
 		borderColor: "border.default",
 	},
-};
+});

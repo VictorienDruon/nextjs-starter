@@ -1,3 +1,5 @@
+import { defineSemanticTokens } from "@pandacss/dev";
+
 const createColorPalette = (name: string) =>
 	Array.from({ length: 12 }, (_, i) => i + 1).reduce(
 		(acc, scale) => ({
@@ -12,7 +14,7 @@ const createColorPalette = (name: string) =>
 		{}
 	);
 
-export const colors = {
+export const colors = defineSemanticTokens.colors({
 	accent: createColorPalette("iris"),
 	neutral: createColorPalette("slate"),
 	error: createColorPalette("red"),
@@ -36,4 +38,4 @@ export const colors = {
 	focusRing: {
 		default: { value: "{colors.accent.7}" },
 	},
-};
+});

@@ -1,6 +1,6 @@
-import { Tokens } from "@pandacss/dev";
+import { defineTokens } from "@pandacss/dev";
 
-export const spacing: Tokens["spacing"] = {
+export const spacing = defineTokens.spacing({
 	0: { value: "0rem" },
 	px: { value: "1px" },
 	0.5: { value: "0.25rem" },
@@ -30,4 +30,4 @@ export const spacing: Tokens["spacing"] = {
 	72: { value: "18rem" },
 	80: { value: "20rem" },
 	96: { value: "24rem" },
-};
+});
