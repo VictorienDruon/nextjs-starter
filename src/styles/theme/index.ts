@@ -1,3 +1,4 @@
+import { definePreset } from "@pandacss/dev";
 import { breakpoints } from "./breakpoints";
 import { keyframes } from "./keyframes";
 import { semanticTokens } from "./semantic-tokens";
@@ -6,9 +7,7 @@ import { textStyles } from "./text-styles";
 import { conditions } from "./conditions";
 import { globalCss } from "./global-css";
 
-import { definePreset } from "@pandacss/dev";
-
-export default definePreset({
+export const theme = definePreset({
 	theme: {
 		breakpoints,
 		keyframes,

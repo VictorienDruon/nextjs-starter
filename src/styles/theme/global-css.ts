@@ -12,7 +12,6 @@ export const globalCss = defineGlobalStyles({
 		background: "bg.default",
 		color: "fg.default",
 		_dark: { colorScheme: "dark" },
-		userSelect: "none",
 	},
 	"*, *::before, *::after": {
 		borderColor: "border.default",
@@ -24,7 +23,7 @@ export const globalCss = defineGlobalStyles({
 		color: "fg.subtle",
 	},
 	"*::selection": {
-		bg: "focusRing",
+		bg: "focusRing.default",
 	},
 	".border, .border-t, .border-r, .border-b, .border-l, hr": {
 		borderColor: "border.default",

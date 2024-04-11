@@ -1,4 +1,4 @@
 export const conditions = {
-	light: ".light &",
-	dark: '.dark &, [data-theme="dark"] &',
+	light: "[data-theme=light] &",
+	dark: "[data-theme=dark] &",
 };

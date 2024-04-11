@@ -5,7 +5,6 @@ import { ThemeProvider } from "@/providers/theme-provider";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { SessionProvider } from "@/providers/session-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +18,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<SessionProvider>
-					<ThemeProvider>{children}</ThemeProvider>
-				</SessionProvider>
+				<ThemeProvider>{children}</ThemeProvider>
 			</body>
 		</html>
 	);
